@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "index.js"
+      }
+    ],
+    "env": {
+      "PORT": "3000",
+      "MONGODB_URI": "<your-mongodb-uri>",
+      "JWT_SECRET": "qaw2ws3edfrtg",
+      "CLOUDINARY_CLOUD_NAME": "dd9bl8abz",
+      "CLOUDINARY_API_KEY": "823957137448818",
+      "CLOUDINARY_API_SECRET": "bcSLpaTmK2vperlUSgO_nVjBmKI",
+      "SESSION_SECRET": "qaswedfgytgfvbjujh",
+      "EMAIL_USER": "demondeath42@gmail.com",
+      "EMAIL_PASS": "czyz wlce mipx foor",
+      "CLIENT_URL": "http://localhost:3000"
+    }
+  }
+  
