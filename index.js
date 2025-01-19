@@ -35,7 +35,9 @@ app.set('views', path.join(__dirname, 'views'));
 //   origin: 'http://localhost:5173', // Replace with your frontend's URL (e.g., http://localhost:3000)
 //   credentials: true,  // Allow credentials such as cookies or authorization headers
 // })
-
+app.get("/", (req,res) => {
+    res.send("hadi")
+})
 app.use(cors());
 // Middleware
 app.use(morgan("dev"));
